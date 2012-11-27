@@ -773,3 +773,200 @@ Served asset /products.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 08:18:09 -0600
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2012-11-27 09:39:26 -0600
+Connecting to database specified by database.yml
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (12.6ms)
+  Rendered products/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 181ms (Views: 106.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 09:39:26 -0600
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-27 09:39:26 -0600
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2012-11-27 09:39:26 -0600
+Served asset /products.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 09:39:26 -0600
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 09:39:26 -0600
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 09:39:26 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-27 09:39:26 -0600
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2012-11-27 09:39:26 -0600
+Served asset /products.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 09:39:26 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2012-11-27 09:39:35 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OKRCc4fn0ef342nnFxiSSMkswRCkXjSvxMT0evlUGP0=", "product"=>{"name"=>"Paper", "description"=>"", "price"=>"5.50"}, "commit"=>"Create Product"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (45.1ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 15:39:35 UTC +00:00], ["description", ""], ["name", "Paper"], ["price", #<BigDecimal:7fd09c9d98f0,'0.55E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:39:35 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/products/2
+Completed 302 Found in 52ms (ActiveRecord: 45.9ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2012-11-27 09:39:35 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered products/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-27 09:39:35 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2012-11-27 09:39:35 -0600
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 09:39:35 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 09:39:35 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 09:39:35 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 09:39:35 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-27 09:39:35 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2012-11-27 09:39:35 -0600
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 09:39:35 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/products/2/edit" for 127.0.0.1 at 2012-11-27 09:42:28 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered products/_form.html.erb (5.0ms)
+  Rendered products/edit.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 09:42:28 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-27 09:42:28 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 09:42:28 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2012-11-27 09:42:28 -0600
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 09:42:28 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 09:42:28 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-27 09:42:28 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2012-11-27 09:42:28 -0600
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 09:42:28 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started PUT "/products/2" for 127.0.0.1 at 2012-11-27 09:42:32 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OKRCc4fn0ef342nnFxiSSMkswRCkXjSvxMT0evlUGP0=", "product"=>{"name"=>"Paper", "description"=>"", "price"=>"5.5"}, "commit"=>"Update Product", "id"=>"2"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/products/2
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2012-11-27 09:42:32 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered products/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 09:42:32 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-27 09:42:32 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 09:42:32 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2012-11-27 09:42:32 -0600
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 09:42:32 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 09:42:32 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-27 09:42:32 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2012-11-27 09:42:32 -0600
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 09:42:32 -0600
+Served asset /application.js - 304 Not Modified (0ms)
