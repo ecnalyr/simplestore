@@ -1,0 +1,185 @@
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (14.4ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 14:25:18 UTC +00:00], ["description", "fruit"], ["name", "Apple"], ["price", #<BigDecimal:7ff4bd9a3fd0,'0.11E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 14:25:18 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 14:25:18 UTC +00:00], ["description", "fruit"], ["name", "Orange"], ["price", #<BigDecimal:7ff4bd8913b8,'0.115E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 14:25:18 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 14:25:18 UTC +00:00], ["description", "office supply"], ["name", "Paper"], ["price", #<BigDecimal:7ff4bd8133c8,'0.3E0',9(18)>], ["updated_at", Tue, 27 Nov 2012 14:25:18 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 14:25:18 UTC +00:00], ["description", "office supply"], ["name", "Scissor"], ["price", #<BigDecimal:7ff4bd8088d8,'0.515E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 14:25:18 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (9.8ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 14:43:22 UTC +00:00], ["description", "fruit"], ["name", "Apple"], ["price", #<BigDecimal:7f869e6338b0,'0.11E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 14:43:22 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 14:43:22 UTC +00:00], ["description", "fruit"], ["name", "Orange"], ["price", #<BigDecimal:7f869e2927d8,'0.115E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 14:43:22 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 14:43:22 UTC +00:00], ["description", "office supply"], ["name", "Paper"], ["price", #<BigDecimal:7f869e2860a0,'0.3E0',9(18)>], ["updated_at", Tue, 27 Nov 2012 14:43:22 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 14:43:22 UTC +00:00], ["description", "office supply"], ["name", "Scissor"], ["price", #<BigDecimal:7f869e27a908,'0.515E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 14:43:22 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.4ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 14:47:01 UTC +00:00], ["description", "fruit"], ["name", "Apple"], ["price", #<BigDecimal:7f8da35a6c10,'0.11E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 14:47:01 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 14:47:01 UTC +00:00], ["description", "fruit"], ["name", "Orange"], ["price", #<BigDecimal:7f8da3471e30,'0.115E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 14:47:01 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 14:47:01 UTC +00:00], ["description", "office supply"], ["name", "Paper"], ["price", #<BigDecimal:7f8da3459e98,'0.3E0',9(18)>], ["updated_at", Tue, 27 Nov 2012 14:47:01 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 14:47:01 UTC +00:00], ["description", "office supply"], ["name", "Scissor"], ["price", #<BigDecimal:7f8da3438298,'0.515E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 14:47:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.9ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.7ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 14:59:43 UTC +00:00], ["description", "fruit"], ["name", "Apple"], ["price", #<BigDecimal:7ff2e54bab10,'0.11E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 14:59:43 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 14:59:43 UTC +00:00], ["description", "fruit"], ["name", "Orange"], ["price", #<BigDecimal:7ff2e51612c0,'0.115E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 14:59:43 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 14:59:43 UTC +00:00], ["description", "office supply"], ["name", "Paper"], ["price", #<BigDecimal:7ff2e5154a70,'0.3E0',9(18)>], ["updated_at", Tue, 27 Nov 2012 14:59:43 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 14:59:43 UTC +00:00], ["description", "office supply"], ["name", "Scissor"], ["price", #<BigDecimal:7ff2e510dbe8,'0.515E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 14:59:43 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.9ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (10.2ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 15:00:14 UTC +00:00], ["description", "fruit"], ["name", "Apple"], ["price", #<BigDecimal:7fd4c6c494e0,'0.11E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:00:14 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 15:00:14 UTC +00:00], ["description", "fruit"], ["name", "Orange"], ["price", #<BigDecimal:7fd4c6a80870,'0.115E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:00:14 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 15:00:14 UTC +00:00], ["description", "office supply"], ["name", "Paper"], ["price", #<BigDecimal:7fd4c6a74160,'0.3E0',9(18)>], ["updated_at", Tue, 27 Nov 2012 15:00:14 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 15:00:14 UTC +00:00], ["description", "office supply"], ["name", "Scissor"], ["price", #<BigDecimal:7fd4c6a68428,'0.515E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:00:14 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.1ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 15:03:19 UTC +00:00], ["description", "fruit"], ["name", "Apple"], ["price", #<BigDecimal:7fa2883d1d00,'0.11E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:03:19 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 15:03:19 UTC +00:00], ["description", "fruit"], ["name", "Orange"], ["price", #<BigDecimal:7fa2880bb350,'0.115E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:03:19 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 15:03:19 UTC +00:00], ["description", "office supply"], ["name", "Paper"], ["price", #<BigDecimal:7fa288048aa8,'0.3E0',9(18)>], ["updated_at", Tue, 27 Nov 2012 15:03:19 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 15:03:19 UTC +00:00], ["description", "office supply"], ["name", "Scissor"], ["price", #<BigDecimal:7fa287b2a260,'0.515E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:03:19 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.3ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.3ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 15:03:58 UTC +00:00], ["description", "fruit"], ["name", "Apple"], ["price", #<BigDecimal:7fc3f6318e60,'0.11E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:03:58 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 15:03:58 UTC +00:00], ["description", "fruit"], ["name", "Orange"], ["price", #<BigDecimal:7fc3f629c4c8,'0.115E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:03:58 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 15:03:58 UTC +00:00], ["description", "office supply"], ["name", "Paper"], ["price", #<BigDecimal:7fc3f6270530,'0.3E0',9(18)>], ["updated_at", Tue, 27 Nov 2012 15:03:58 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 15:03:58 UTC +00:00], ["description", "office supply"], ["name", "Scissor"], ["price", #<BigDecimal:7fc3f6266378,'0.515E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:03:58 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.5ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 15:04:43 UTC +00:00], ["description", "fruit"], ["name", "Apple"], ["price", #<BigDecimal:7ffc5e67c4a8,'0.11E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:04:43 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 15:04:43 UTC +00:00], ["description", "fruit"], ["name", "Orange"], ["price", #<BigDecimal:7ffc5e414148,'0.115E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:04:43 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 15:04:43 UTC +00:00], ["description", "office supply"], ["name", "Paper"], ["price", #<BigDecimal:7ffc5e29b1e0,'0.3E0',9(18)>], ["updated_at", Tue, 27 Nov 2012 15:04:43 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 15:04:43 UTC +00:00], ["description", "office supply"], ["name", "Scissor"], ["price", #<BigDecimal:7ffc5e28ea08,'0.515E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:04:43 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (9.1ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 15:05:20 UTC +00:00], ["description", "fruit"], ["name", "Apple"], ["price", #<BigDecimal:7ff778b341e8,'0.11E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:05:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 15:05:20 UTC +00:00], ["description", "fruit"], ["name", "Orange"], ["price", #<BigDecimal:7ff7789b16e0,'0.115E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:05:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 15:05:20 UTC +00:00], ["description", "office supply"], ["name", "Paper"], ["price", #<BigDecimal:7ff7789a0200,'0.3E0',9(18)>], ["updated_at", Tue, 27 Nov 2012 15:05:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 15:05:20 UTC +00:00], ["description", "office supply"], ["name", "Scissor"], ["price", #<BigDecimal:7ff7789949c8,'0.515E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:05:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2012-11-27 09:05:20 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.6ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 15:11:01 UTC +00:00], ["description", "fruit"], ["name", "Apple"], ["price", #<BigDecimal:7f94400b45b0,'0.11E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:11:01 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 15:11:01 UTC +00:00], ["description", "fruit"], ["name", "Orange"], ["price", #<BigDecimal:7f943f3619d0,'0.115E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:11:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 15:11:01 UTC +00:00], ["description", "office supply"], ["name", "Paper"], ["price", #<BigDecimal:7f943f356058,'0.3E0',9(18)>], ["updated_at", Tue, 27 Nov 2012 15:11:01 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 15:11:01 UTC +00:00], ["description", "office supply"], ["name", "Scissor"], ["price", #<BigDecimal:7f943f349bc8,'0.515E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:11:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2012-11-27 09:11:01 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (1.9ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.3ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 15:11:19 UTC +00:00], ["description", "fruit"], ["name", "Apple"], ["price", #<BigDecimal:7fe01db4c3c8,'0.11E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:11:19 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 15:11:19 UTC +00:00], ["description", "fruit"], ["name", "Orange"], ["price", #<BigDecimal:7fe01bd608a0,'0.115E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:11:19 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 15:11:19 UTC +00:00], ["description", "office supply"], ["name", "Paper"], ["price", #<BigDecimal:7fe01bd4b158,'0.3E0',9(18)>], ["updated_at", Tue, 27 Nov 2012 15:11:19 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 27 Nov 2012 15:11:19 UTC +00:00], ["description", "office supply"], ["name", "Scissor"], ["price", #<BigDecimal:7fe01bd00a68,'0.515E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 15:11:19 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2012-11-27 09:11:19 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (2.2ms)[0m  [1mrollback transaction[0m

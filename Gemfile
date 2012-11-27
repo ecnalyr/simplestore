@@ -6,7 +6,16 @@ gem 'rails', '3.2.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'rake', '~> 10.0.1'
 
+
+group :development, :test do
+	gem 'rspec-rails', '~> 2.0'
+	gem 'annotate', '>=2.5.0'
+	gem 'cucumber-rails', :require => false
+	gem 'database_cleaner'
+  	gem 'capybara'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
