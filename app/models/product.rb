@@ -12,4 +12,7 @@
 
 class Product < ActiveRecord::Base
   attr_accessible :description, :name, :price
+
+  validates :name,  :presence => true
+  validates :description, :length => { :maximum => 100 }
 end

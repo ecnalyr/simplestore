@@ -970,3 +970,177 @@ Served asset /products.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 09:42:32 -0600
 Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProducts (20121116163801)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-27 10:27:02 -0600
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 82ms (Views: 81.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 10:27:03 -0600
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-11-27 10:27:03 -0600
+Served asset /home.css - 200 OK (3ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2012-11-27 10:27:03 -0600
+Served asset /products.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 10:27:03 -0600
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 10:27:03 -0600
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 10:27:03 -0600
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-11-27 10:27:03 -0600
+Served asset /home.js - 200 OK (3ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2012-11-27 10:27:03 -0600
+Served asset /products.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 10:27:03 -0600
+Served asset /application.js - 200 OK (9ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2012-11-27 10:27:04 -0600
+
+ActionController::RoutingError (undefined local variable or method `length' for #<Class:0x007fc1fbe967d0>):
+  app/models/product.rb:17:in `<class:Product>'
+  app/models/product.rb:13:in `<top (required)>'
+  app/controllers/products_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/ecnalyr/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProducts (20121116163801)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProducts (20121116163801)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/products" for 127.0.0.1 at 2012-11-27 10:31:19 -0600
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (undefined local variable or method `length' for #<Class:0x007f9d733b08e0>):
+  app/models/product.rb:17:in `<class:Product>'
+  app/models/product.rb:13:in `<top (required)>'
+  app/controllers/products_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/ecnalyr/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (32.4ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProducts (20121116163801)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/products" for 127.0.0.1 at 2012-11-27 10:32:13 -0600
+Connecting to database specified by database.yml
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" [0m
+  Rendered products/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 160ms (Views: 87.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 10:32:13 -0600
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2012-11-27 10:32:17 -0600
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (9.0ms)
+  Rendered products/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 10:32:17 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2012-11-27 10:32:24 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7my14RENFLUtPdqf/wYFpwbdI5LQBrJlx9215VRsdyA=", "product"=>{"name"=>"", "description"=>"wonderful stuff", "price"=>"1.22"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered products/_form.html.erb (5.1ms)
+  Rendered products/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 21ms (Views: 16.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 10:32:24 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2012-11-27 10:32:33 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7my14RENFLUtPdqf/wYFpwbdI5LQBrJlx9215VRsdyA=", "product"=>{"name"=>"apples", "description"=>"wonderful stuffwonderful stuffwonderful stuffwonderful stuffwonderful stuffwonderful stuffwonderful stuffwonderful stuffwonderful stuffwonderful stuffwonderful stuffwonderful stuffwonderful stuffwonderful stuff", "price"=>"1.22"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered products/_form.html.erb (6.0ms)
+  Rendered products/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 10:32:33 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2012-11-27 10:32:44 -0600
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7my14RENFLUtPdqf/wYFpwbdI5LQBrJlx9215VRsdyA=", "product"=>{"name"=>"apple sauce", "description"=>"soupy", "price"=>"1.22"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (10.4ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "name", "price", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Tue, 27 Nov 2012 16:32:44 UTC +00:00], ["description", "soupy"], ["name", "apple sauce"], ["price", #<BigDecimal:7faf2abb4190,'0.122E1',18(18)>], ["updated_at", Tue, 27 Nov 2012 16:32:44 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/3
+Completed 302 Found in 16ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/products/3" for 127.0.0.1 at 2012-11-27 10:32:44 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered products/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 10:32:44 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2012-11-27 10:32:46 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 10:32:46 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
