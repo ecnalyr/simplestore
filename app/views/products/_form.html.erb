@@ -16,8 +16,24 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
+    <%= f.label :brief_description %><br />
+    <%= f.text_area :brief_description %>
+  </div>
+  <div class="field">
+    <%= f.label :full_description %><br />
+    <%= f.text_area :full_description %>
+  </div>
+  <div class="field">
+    <%= f.label :meta_keywords %><br />
+    <%= f.text_field :meta_keywords %>
+  </div>
+  <div class="field">
+    <%= f.label :image_link %><br />
+    <%= f.text_field :image_link %>
+  </div>
+  <div class="field">
+    <%= f.label :sku %><br />
+    <%= f.text_field :sku %>
   </div>
   <div class="field">
     <%= f.label :price %><br />

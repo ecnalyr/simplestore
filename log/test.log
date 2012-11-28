@@ -667,3 +667,516 @@ Processing by ProductsController#show as HTML
 Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.1ms)
   [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' LIMIT 1
   [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to AddMissingColumnsToProducts (20121128134816)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "products" ADD "brief_description" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "products" ADD "full_description" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "products" ADD "meta_keywords" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "products" ADD "image_link" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "products" ADD "sku" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121128134816')[0m
+  [1m[35m (2.4ms)[0m  commit transaction
+Migrating to RemoveDescriptionFromProducts (20121128135833)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TEMPORARY TABLE "altered_products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "brief_description" varchar(255), "full_description" varchar(255), "meta_keywords" varchar(255), "image_link" varchar(255), "sku" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "products"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "products"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "brief_description" varchar(255), "full_description" varchar(255), "meta_keywords" varchar(255), "image_link" varchar(255), "sku" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "altered_products"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "altered_products"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121128135833')
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateProducts (20121128140649)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "brief_description" text, "full_description" text, "meta_keywords" varchar(255), "image_link" varchar(255), "sku" varchar(255), "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+SQLite3::SQLException: table "products" already exists: CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "brief_description" text, "full_description" text, "meta_keywords" varchar(255), "image_link" varchar(255), "sku" varchar(255), "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to AddMissingColumnsToProducts (20121128134816)
+Migrating to RemoveDescriptionFromProducts (20121128135833)
+Migrating to CreateProducts (20121128140649)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "brief_description" text, "full_description" text, "meta_keywords" varchar(255), "image_link" varchar(255), "sku" varchar(255), "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+SQLite3::SQLException: table "products" already exists: CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "brief_description" text, "full_description" text, "meta_keywords" varchar(255), "image_link" varchar(255), "sku" varchar(255), "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to AddMissingColumnsToProducts (20121128134816)
+Migrating to RemoveDescriptionFromProducts (20121128135833)
+Migrating to CreateProducts (20121128140649)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "brief_description" text, "full_description" text, "meta_keywords" varchar(255), "image_link" varchar(255), "sku" varchar(255), "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+SQLite3::SQLException: table "products" already exists: CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "brief_description" text, "full_description" text, "meta_keywords" varchar(255), "image_link" varchar(255), "sku" varchar(255), "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (2.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "brief_description" varchar(255), "full_description" varchar(255), "meta_keywords" varchar(255), "image_link" varchar(255), "sku" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121128135833')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121128134816')[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to AddMissingColumnsToProducts (20121128134816)
+Migrating to RemoveDescriptionFromProducts (20121128135833)
+Migrating to CreateProducts (20121128140649)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "brief_description" text, "full_description" text, "meta_keywords" varchar(255), "image_link" varchar(255), "sku" varchar(255), "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+SQLite3::SQLException: table "products" already exists: CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "brief_description" text, "full_description" text, "meta_keywords" varchar(255), "image_link" varchar(255), "sku" varchar(255), "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.7ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:25:41 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fc6991b4d80,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:25:41 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:25:41 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fc69913faa8,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:25:41 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:25:41 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fc699132fd8,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:25:41 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:25:41 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fc699123588,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:25:41 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2012-11-28 08:25:41 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:25:42 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fc69920bf40,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:25:42 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:25:42 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fc6991f6eb0,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:25:42 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:25:42 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fc6991e4cd8,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:25:42 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:25:42 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fc6991ce870,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:25:42 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' LIMIT 1[0m
+Started GET "/products/3/edit" for 127.0.0.1 at 2012-11-28 08:25:42 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered products/_form.html.erb (12.1ms)
+  Rendered products/edit.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.9ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:19 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fb7b56a1520,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:19 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:19 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fb7b5615cc8,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:19 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:19 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fb7b55d6e38,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:19 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:19 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fb7b55c6e98,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:19 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2012-11-28 08:26:19 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (2.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:20 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fb7b60b0200,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:20 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fb7b60062c8,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:20 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fb7b56d02d0,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:20 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fb7b56bb8a8,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' LIMIT 1[0m
+Started GET "/products/3/edit" for 127.0.0.1 at 2012-11-28 08:26:20 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered products/_form.html.erb (12.6ms)
+  Rendered products/edit.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (10.9ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7f8e10150d38,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7f8e0f51e2b8,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7f8e0f511568,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7f8e0f5017d0,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2012-11-28 08:26:42 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7f8e102052b0,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7f8e101f1058,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7f8e101aadd8,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7f8e10196540,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:42 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' LIMIT 1[0m
+Started GET "/products/3/edit" for 127.0.0.1 at 2012-11-28 08:26:42 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered products/_form.html.erb (12.0ms)
+  Rendered products/edit.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (1.9ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.5ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:55 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7f8aa783fa98,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:55 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:55 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7f8aa6f0c188,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:55 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:55 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7f8aa6eff3c0,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:55 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:55 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7f8aa6ee8738,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:55 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2012-11-28 08:26:55 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:56 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7f8aa7a2cea0,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:56 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:56 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7f8aa79fbbe8,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:56 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:56 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7f8aa793a1f0,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:56 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:26:56 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7f8aa789f830,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:26:56 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' LIMIT 1[0m
+Started GET "/products/3/edit" for 127.0.0.1 at 2012-11-28 08:26:56 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered products/_form.html.erb (11.9ms)
+  Rendered products/edit.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.2ms)
+Started PUT "/products/3" for 127.0.0.1 at 2012-11-28 08:26:56 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "product"=>{"name"=>"Paper", "brief_description"=>"", "full_description"=>"office supply", "meta_keywords"=>"", "image_link"=>"", "sku"=>"", "price"=>"0.3"}, "commit"=>"Update Product", "id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mProduct Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "products" WHERE ("products"."sku" = '' AND "products"."id" != 3) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "products" SET "brief_description" = '', "full_description" = 'office supply', "meta_keywords" = '', "image_link" = '', "sku" = '', "updated_at" = '2012-11-28 14:26:56.193175' WHERE "products"."id" = 3
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/products/3
+Completed 302 Found in 33ms (ActiveRecord: 0.5ms)
+Started GET "/products/3" for 127.0.0.1 at 2012-11-28 08:26:56 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered products/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.1ms)
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' LIMIT 1[0m
+  [1m[35m (1.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (10.3ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:26 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fc33f358a18,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:26 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:26 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fc33f1e3908,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:26 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:26 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fc33f1c16a0,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:26 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:26 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fc33f1a99d8,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:26 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2012-11-28 08:27:26 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:27 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fc33f3b52e0,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:27 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:27 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fc33f3a1628,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:27 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:27 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fc33f38f630,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:27 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:27 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fc33f37bb30,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:27 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' LIMIT 1[0m
+Started GET "/products/3/edit" for 127.0.0.1 at 2012-11-28 08:27:27 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered products/_form.html.erb (12.9ms)
+  Rendered products/edit.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+Started PUT "/products/3" for 127.0.0.1 at 2012-11-28 08:27:27 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "product"=>{"name"=>"Paper", "brief_description"=>"", "full_description"=>"office supply", "meta_keywords"=>"", "image_link"=>"", "sku"=>"", "price"=>"0.3"}, "commit"=>"Update Product", "id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mProduct Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "products" WHERE ("products"."sku" = '' AND "products"."id" != 3) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "products" SET "brief_description" = '', "full_description" = 'office supply', "meta_keywords" = '', "image_link" = '', "sku" = '', "updated_at" = '2012-11-28 14:27:27.264086' WHERE "products"."id" = 3
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/products/3
+Completed 302 Found in 31ms (ActiveRecord: 0.5ms)
+Started GET "/products/3" for 127.0.0.1 at 2012-11-28 08:27:27 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered products/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' LIMIT 1[0m
+  [1m[35m (1.9ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.8ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:56 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7f866731b538,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:56 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:56 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7f866707e2a8,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:56 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:56 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7f8667071918,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:56 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:56 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7f86670215f8,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:56 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2012-11-28 08:27:56 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (2.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:56 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7f8667552a68,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:56 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:56 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7f866752e1e0,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:56 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:56 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7f866745d270,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:56 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:27:57 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7f866734d268,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:27:57 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' LIMIT 1[0m
+Started GET "/products/3/edit" for 127.0.0.1 at 2012-11-28 08:27:57 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered products/_form.html.erb (13.4ms)
+  Rendered products/edit.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+Started PUT "/products/3" for 127.0.0.1 at 2012-11-28 08:27:57 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "product"=>{"name"=>"Paper", "brief_description"=>"", "full_description"=>"office supply", "meta_keywords"=>"", "image_link"=>"", "sku"=>"", "price"=>"0.3"}, "commit"=>"Update Product", "id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mProduct Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "products" WHERE ("products"."sku" = '' AND "products"."id" != 3) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "products" SET "brief_description" = '', "full_description" = 'office supply', "meta_keywords" = '', "image_link" = '', "sku" = '', "updated_at" = '2012-11-28 14:27:57.148550' WHERE "products"."id" = 3
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/products/3
+Completed 302 Found in 33ms (ActiveRecord: 0.5ms)
+Started GET "/products/3" for 127.0.0.1 at 2012-11-28 08:27:57 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered products/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' LIMIT 1[0m
+  [1m[35m (1.9ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (9.5ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7ffe55a182f8,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7ffe558be4e8,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7ffe558b1ec8,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7ffe558a2b30,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2012-11-28 08:28:26 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (2.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7ffe55a6d410,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7ffe55a59258,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7ffe55a455a0,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7ffe55a30858,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 14:28:26 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' LIMIT 1[0m
+Started GET "/products/3/edit" for 127.0.0.1 at 2012-11-28 08:28:26 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered products/_form.html.erb (12.7ms)
+  Rendered products/edit.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+Started PUT "/products/3" for 127.0.0.1 at 2012-11-28 08:28:26 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "product"=>{"name"=>"Paper", "brief_description"=>"", "full_description"=>"office supply", "meta_keywords"=>"", "image_link"=>"", "sku"=>"", "price"=>"0.3"}, "commit"=>"Update Product", "id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mProduct Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "products" WHERE ("products"."sku" = '' AND "products"."id" != 3) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "products" SET "brief_description" = '', "full_description" = 'office supply', "meta_keywords" = '', "image_link" = '', "sku" = '', "updated_at" = '2012-11-28 14:28:27.030027' WHERE "products"."id" = 3
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/products/3
+Completed 302 Found in 33ms (ActiveRecord: 0.5ms)
+Started GET "/products/3" for 127.0.0.1 at 2012-11-28 08:28:27 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered products/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.1ms)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' LIMIT 1[0m
+  [1m[35m (1.8ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateProducts (20121128140649)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "brief_description" text, "full_description" text, "meta_keywords" varchar(255), "image_link" varchar(255), "sku" varchar(255), "price" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121128140649')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fe33edc8268,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fe33ed06fc8,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fe33ea729b0,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fe33ea5d0d8,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/products" for 127.0.0.1 at 2012-11-28 09:44:41 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" 
+  Rendered products/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (2.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fe33ef04e38,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00], ["full_description", "fruit"], ["image_link", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fe33ee26d68,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00], ["full_description", ""], ["image_link", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fe33ee0def8,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_link", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00], ["full_description", "office supply"], ["image_link", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fe33edf7d60,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Wed, 28 Nov 2012 15:44:41 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' LIMIT 1[0m
+Started GET "/products/3/edit" for 127.0.0.1 at 2012-11-28 09:44:41 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered products/_form.html.erb (12.4ms)
+  Rendered products/edit.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.3ms)
+Started PUT "/products/3" for 127.0.0.1 at 2012-11-28 09:44:41 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "product"=>{"name"=>"Paper", "brief_description"=>"", "full_description"=>"office supply", "meta_keywords"=>"", "image_link"=>"", "sku"=>"", "price"=>"0.3"}, "commit"=>"Update Product", "id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mProduct Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "products" WHERE ("products"."sku" = '' AND "products"."id" != 3) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "products" SET "brief_description" = '', "full_description" = 'office supply', "meta_keywords" = '', "image_link" = '', "sku" = '', "updated_at" = '2012-11-28 15:44:41.669769' WHERE "products"."id" = 3
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/products/3
+Completed 302 Found in 32ms (ActiveRecord: 0.4ms)
+Started GET "/products/3" for 127.0.0.1 at 2012-11-28 09:44:41 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered products/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction

@@ -7,11 +7,11 @@ Feature: products
 Background: products in database
 
 	Given the following products exist:
-	| name		| description	| price	|
-	| Apple		| fruit	        | 1.10	|
-	| Orange	| fruit	        | 1.15	|
-	| Paper		|           	| 0.30	|
-	| Scissor	| office supply | 5.15	|
+	| name		| full_description	| price	|
+	| Apple		| fruit	            | 1.10	|
+	| Orange	| fruit	            | 1.15	|
+	| Paper		|           	    | 0.30	|
+	| Scissor	| office supply     | 5.15	|
 
 Scenario: User Views Product List
 	When user visits the Product List page
@@ -20,6 +20,6 @@ Scenario: User Views Product List
 
 Scenario: User updates the description of a product
 	When user visits the edit page for "Paper"
-	And user fills in "Description" with "office supply"
+	And user fills in "Full description" with "office supply"
 	And user presses "Update Product"
-	Then the description of "Paper" should be "office supply"
+	Then the full description of "Paper" should be "office supply"

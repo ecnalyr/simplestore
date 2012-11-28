@@ -25,7 +25,7 @@ When /^user presses "(.*?)"$/ do |button|
   click_button(button)
 end
 
-Then /^the description of "(.*?)" should be "(.*?)"$/ do |name, description|
+Then /^the full description of "(.*?)" should be "(.*?)"$/ do |name, full_description|
   product = Product.find_by_name(name)
-  assert description == product.description
+  assert full_description == product.full_description
 end
