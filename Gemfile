@@ -7,7 +7,7 @@ gem 'rails', '3.2.9'
 
 gem 'sqlite3'
 gem 'rake', '~> 10.0.1'
-
+gem 'paperclip', '~> 3.0'
 
 group :development, :test do
 	gem 'rspec-rails', '~> 2.0'

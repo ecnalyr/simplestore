@@ -23,3 +23,9 @@ Scenario: User updates the description of a product
 	And user fills in "Full description" with "office supply"
 	And user presses "Update Product"
 	Then the full description of "Paper" should be "office supply"
+
+Scenario: User can upload an accepted filetype as an image
+	When user visits the edit page for "Orange"
+	And user attaches the file "test/fixtures/orange.png" to "Image"
+	And user presses "Update Product"
+	Then user should see an image with an alt-text of "Orange"

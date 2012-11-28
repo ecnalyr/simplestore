@@ -29,3 +29,11 @@ Then /^the full description of "(.*?)" should be "(.*?)"$/ do |name, full_descri
   product = Product.find_by_name(name)
   assert full_description == product.full_description
 end
+
+When /^user attaches the file "(.*?)" to "(.*?)"$/ do |path, field|
+  attach_file(field, path)
+end
+
+Then /^user should see an image with an alt-text of "(.*?)"$/ do |arg1|
+  page.should have_selector("img[alt$='#{arg1}']")
+end

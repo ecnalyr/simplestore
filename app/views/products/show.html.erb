@@ -21,11 +21,6 @@
 </p>
 
 <p>
-  <b>Image link:</b>
-  <%= @product.image_link %>
-</p>
-
-<p>
   <b>Sku:</b>
   <%= @product.sku %>
 </p>
@@ -33,6 +28,13 @@
 <p>
   <b>Price:</b>
   <%= @product.price %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= image_tag @product.image.url %>
+  <%= image_tag @product.image.url(:medium) %>
+  <%= image_tag @product.image.url(:thumb) %>
 </p>
 
 
