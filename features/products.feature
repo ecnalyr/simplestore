@@ -4,7 +4,7 @@ Feature: products
 	So that I can see a list of existing products and their details
 	I want to be presented with a list of existing products and be able to edit them
 
-Background: products in database
+Background: products in database and a user is logged in
 
 	Given the following products exist:
 	| name		| full_description	| price	|
@@ -13,6 +13,8 @@ Background: products in database
 	| Paper		|           	    | 0.30	|
 	| Scissor	| office supply     | 5.15	|
 
+	Given a logged in user
+	
 Scenario: User Views Product List
 	When user visits the Product List page
 	And user should see "Apple"

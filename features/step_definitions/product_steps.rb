@@ -37,3 +37,5 @@ end
 Then /^user should see an image with an alt-text of "(.*?)"$/ do |arg1|
   page.should have_selector("img[alt$='#{arg1}']")
 end
+
+

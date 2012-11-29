@@ -1,4 +1,7 @@
 class ProductsController < ApplicationController
+
+  before_filter :authorize, only: [:create, :edit, :update]
+
   # GET /products
   # GET /products.json
   def index
