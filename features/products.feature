@@ -29,3 +29,9 @@ Scenario: User can upload an accepted filetype as an image
 	And user attaches the file "test/fixtures/orange.png" to "Image"
 	And user presses "Update Product"
 	Then user should see an image with an alt-text of "Orange"
+
+Scenario: User cannot upload an unaccepted filetype as an image
+	When user visits the edit page for "Scissor"
+	And user attaches the file "test/fixtures/badfile.pdf" to "Image"
+	And user presses "Update Product"
+	Then user should see "Image content type is invalid"
