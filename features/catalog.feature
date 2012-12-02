@@ -18,3 +18,4 @@ Scenario: User Views the Catalog
     And user should see "Apple"
     And user should see "office supply"
     And user should not see "full descrip"
+    And user should see "$1.10"

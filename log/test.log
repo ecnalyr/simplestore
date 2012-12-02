@@ -9692,3 +9692,782 @@ Processing by ProductsController#index as HTML
   [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
 Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
   [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)[0m
+SQLite3::SQLException: table products has no column named description: INSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)[0m
+SQLite3::SQLException: table products has no column named description: INSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)[0m
+SQLite3::SQLException: table products has no column named description: INSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)[0m
+SQLite3::SQLException: table products has no column named description: INSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)[0m
+SQLite3::SQLException: table products has no column named description: INSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)[0m
+SQLite3::SQLException: table products has no column named description: INSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)[0m
+SQLite3::SQLException: table products has no column named description: INSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "products"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)[0m
+SQLite3::SQLException: table products has no column named description: INSERT INTO "products" ("name", "description", "price", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 9.99, '2012-12-02 19:34:43', '2012-12-02 19:34:43', 980190962)
+  [1m[35m (0.3ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  Rendered products/show.html.erb (7.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered products/_form.html.erb (12.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ProductsController#create as HTML
+  Parameters: {"product"=>{"name"=>"MyString"}}
+Redirected to http://test.host/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY name DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProductsController#create as HTML
+  Parameters: {"product"=>{"name"=>"MyString"}}
+Redirected to http://test.host/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "products" [0m
+Processing by ProductsController#create as HTML
+  Parameters: {"product"=>{"name"=>"MyString"}}
+Redirected to http://test.host/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "products" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProductsController#create as HTML
+  Parameters: {"product"=>{"name"=>"invalid value"}}
+Redirected to http://test.host/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ProductsController#create as HTML
+  Parameters: {"product"=>{"name"=>"invalid value"}}
+Redirected to http://test.host/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by ProductsController#new as HTML
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered products/_form.html.erb (5.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SessionsController#new as HTML
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/products" for 127.0.0.1 at 2012-12-02 13:34:55 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY name[0m
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY name
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", "fruit"], ["created_at", Sun, 02 Dec 2012 19:37:31 UTC +00:00], ["full_description", "full descrip"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fda03f7e3a8,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:31 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", "fruit"], ["created_at", Sun, 02 Dec 2012 19:37:31 UTC +00:00], ["full_description", "full descrip"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fda03ece0c0,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:31 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", ""], ["created_at", Sun, 02 Dec 2012 19:37:31 UTC +00:00], ["full_description", "full descrip"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fda03ea8320,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:31 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", "office supply"], ["created_at", Sun, 02 Dec 2012 19:37:31 UTC +00:00], ["full_description", "full descrip"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fda03e60bb0,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:31 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2012-12-02 13:37:32 -0600
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY name
+  Rendered store/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 81ms (Views: 78.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (2.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:32 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fda06db3b88,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:32 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:32 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fda06b59518,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:32 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:32 UTC +00:00], ["full_description", ""], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fda05a166c0,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:32 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:32 UTC +00:00], ["full_description", "office supply"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fda047654e0,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:32 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 02 Dec 2012 19:37:32 UTC +00:00], ["email", "admin@adminsemail.com"], ["password_digest", "$2a$10$3Yvr5fsoz8n44WLECGALCOJWIiXqOWFMWpJinQzYLHY53RN..lyca"], ["updated_at", Sun, 02 Dec 2012 19:37:32 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/login" for 127.0.0.1 at 2012-12-02 13:37:32 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (40.4ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2012-12-02 13:37:32 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"admin@adminsemail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 302ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2012-12-02 13:37:33 -0600
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY name
+  Rendered store/index.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.3ms)
+Started GET "/products" for 127.0.0.1 at 2012-12-02 13:37:33 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY name
+  Rendered products/index.html.erb within layouts/application (6.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (1.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fda06e23ac8,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fda06b1ce38,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00], ["full_description", ""], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fda05a164b8,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00], ["full_description", "office supply"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fda04766908,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00], ["email", "admin@adminsemail.com"], ["password_digest", "$2a$10$3yRhM0yzGAyO.rKay2o7VOxmvFkQ1RRM5GdLnSzf/i4jE6uZN/9RK"], ["updated_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/login" for 127.0.0.1 at 2012-12-02 13:37:33 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2012-12-02 13:37:33 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"admin@adminsemail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1
+Redirected to http://www.example.com/
+Completed 302 Found in 290ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2012-12-02 13:37:33 -0600
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY name[0m
+  Rendered store/index.html.erb within layouts/application (6.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.3ms)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' ORDER BY name LIMIT 1[0m
+Started GET "/products/3/edit" for 127.0.0.1 at 2012-12-02 13:37:33 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1[0m  [["id", "3"]]
+  Rendered products/_form.html.erb (6.4ms)
+  Rendered products/edit.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+Started PUT "/products/3" for 127.0.0.1 at 2012-12-02 13:37:33 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "product"=>{"name"=>"Paper", "brief_description"=>"", "full_description"=>"office supply", "meta_keywords"=>"", "sku"=>"", "price"=>"0.3"}, "commit"=>"Update Product", "id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mProduct Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "products" WHERE ("products"."sku" = '' AND "products"."id" != 3) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "products" SET "brief_description" = '', "full_description" = 'office supply', "meta_keywords" = '', "sku" = '', "updated_at" = '2012-12-02 19:37:33.827377' WHERE "products"."id" = 3
+[paperclip] Saving attachments.
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/products/3
+Completed 302 Found in 10ms (ActiveRecord: 0.4ms)
+Started GET "/products/3" for 127.0.0.1 at 2012-12-02 13:37:33 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1  [["id", "3"]]
+  Rendered products/show.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 55ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' ORDER BY name LIMIT 1
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fda047aa608,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fda04729530,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00], ["full_description", ""], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fda045e9580,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00], ["full_description", "office supply"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fda0455f1f0,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:33 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 02 Dec 2012 19:37:34 UTC +00:00], ["email", "admin@adminsemail.com"], ["password_digest", "$2a$10$u1l.cVDphC9k3EmVNOOZsO3.2h7uwwrlVVmKKPfO4BVlUdD/7nZR2"], ["updated_at", Sun, 02 Dec 2012 19:37:34 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/login" for 127.0.0.1 at 2012-12-02 13:37:34 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2012-12-02 13:37:34 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"admin@adminsemail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 290ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2012-12-02 13:37:34 -0600
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY name
+  Rendered store/index.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."name" = 'Orange' ORDER BY name LIMIT 1
+Started GET "/products/2/edit" for 127.0.0.1 at 2012-12-02 13:37:34 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1  [["id", "2"]]
+  Rendered products/_form.html.erb (4.6ms)
+  Rendered products/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+Started PUT "/products/2" for 127.0.0.1 at 2012-12-02 13:37:34 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "product"=>{"name"=>"Orange", "brief_description"=>"", "full_description"=>"\nfruit", "meta_keywords"=>"", "sku"=>"", "price"=>"1.15", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fda03c25760 @original_filename="orange.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"orange.png\"\r\nContent-Type: image/png\r\nContent-Length: 178659\r\n", @tempfile=#<File:/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/RackMultipart20121202-3182-l1r4a6>>}, "commit"=>"Update Product", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1  [["id", "2"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Command :: identify -format %wx%h '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3182-m1fqw8.png[0]'
+Command :: identify -format %m '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3182-m1fqw8.png[0]'
+Command :: identify -format %m '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3182-m1fqw8.png[0]'
+Command :: convert '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3182-m1fqw8.png[0]' -auto-orient -resize "300x300>" '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3182-m1fqw820121202-3182-1f3bek8'
+Command :: file -b --mime '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3182-m1fqw820121202-3182-1f3bek8'
+Command :: identify -format %wx%h '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3182-m1fqw8.png[0]'
+Command :: identify -format %m '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3182-m1fqw8.png[0]'
+Command :: identify -format %m '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3182-m1fqw8.png[0]'
+Command :: convert '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3182-m1fqw8.png[0]' -auto-orient -resize "100x100>" '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3182-m1fqw820121202-3182-k6iz0h'
+Command :: file -b --mime '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3182-m1fqw820121202-3182-k6iz0h'
+  [1m[35mProduct Exists (0.3ms)[0m  SELECT 1 AS one FROM "products" WHERE ("products"."sku" = '' AND "products"."id" != 2) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "products" SET "brief_description" = '', "full_description" = '
+fruit', "meta_keywords" = '', "sku" = '', "image_file_name" = 'orange.png', "image_content_type" = 'image/png', "image_file_size" = 178659, "image_updated_at" = '2012-12-02 19:37:34.548810', "updated_at" = '2012-12-02 19:37:34.857447' WHERE "products"."id" = 2[0m
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/products/2
+Completed 302 Found in 342ms (ActiveRecord: 0.7ms)
+Started GET "/products/2" for 127.0.0.1 at 2012-12-02 13:37:34 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1[0m  [["id", "2"]]
+  Rendered products/show.html.erb within layouts/application (5.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:34 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fda03ff01b0,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:34 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:34 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fda03f9e6a8,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:34 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:34 UTC +00:00], ["full_description", ""], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fda03f81df0,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:34 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:37:34 UTC +00:00], ["full_description", "office supply"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fda03f48e60,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:37:34 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 02 Dec 2012 19:37:35 UTC +00:00], ["email", "admin@adminsemail.com"], ["password_digest", "$2a$10$UvUlB93wQrGDgkPxPRHaR.SUbVGI.AtK1fqN0rY2GLWhHqIqxxVRG"], ["updated_at", Sun, 02 Dec 2012 19:37:35 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/login" for 127.0.0.1 at 2012-12-02 13:37:35 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2012-12-02 13:37:35 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"admin@adminsemail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 296ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2012-12-02 13:37:35 -0600
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY name
+  Rendered store/index.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.3ms)
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."name" = 'Scissor' ORDER BY name LIMIT 1
+Started GET "/products/4/edit" for 127.0.0.1 at 2012-12-02 13:37:35 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1  [["id", "4"]]
+  Rendered products/_form.html.erb (5.1ms)
+  Rendered products/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms)
+Started PUT "/products/4" for 127.0.0.1 at 2012-12-02 13:37:35 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "product"=>{"name"=>"Scissor", "brief_description"=>"", "full_description"=>"\noffice supply", "meta_keywords"=>"", "sku"=>"", "price"=>"5.15", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fda038fd998 @original_filename="badfile.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"badfile.pdf\"\r\nContent-Type: application/pdf\r\nContent-Length: 0\r\n", @tempfile=#<File:/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/RackMultipart20121202-3182-evt8rm>>}, "commit"=>"Update Product", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1  [["id", "4"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Command :: identify -format %wx%h '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/badfile20121202-3182-18gqot7.pdf[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: /var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/badfile20121202-3182-18gqot7.pdf is not recognized by the 'identify' command.>
+Command :: identify -format %wx%h '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/badfile20121202-3182-18gqot7.pdf[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: /var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/badfile20121202-3182-18gqot7.pdf is not recognized by the 'identify' command.>
+  [1m[35mProduct Exists (0.2ms)[0m  SELECT 1 AS one FROM "products" WHERE ("products"."sku" = '' AND "products"."id" != 4) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered products/_form.html.erb (9.7ms)
+  Rendered products/edit.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 66ms (Views: 14.3ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sun, 02 Dec 2012 19:37:36 UTC +00:00], ["email", "admin@adminsemail.com"], ["password_digest", "$2a$10$2rhNIMs6vLYy9clhusLUKuiMnwW.Z6OEhkG4gZb3YMptNaOI9glc6"], ["updated_at", Sun, 02 Dec 2012 19:37:36 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/login" for 127.0.0.1 at 2012-12-02 13:37:36 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2012-12-02 13:37:36 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"admin@adminsemail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1
+Redirected to http://www.example.com/
+Completed 302 Found in 290ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2012-12-02 13:37:36 -0600
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY name[0m
+  Rendered store/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+Started GET "/products" for 127.0.0.1 at 2012-12-02 13:37:36 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY name[0m
+  Rendered products/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (8.9ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", "fruit"], ["created_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00], ["full_description", "full descrip"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fbaa6552fe0,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", "fruit"], ["created_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00], ["full_description", "full descrip"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fbaa6248750,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", ""], ["created_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00], ["full_description", "full descrip"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fbaa61ed210,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", "office supply"], ["created_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00], ["full_description", "full descrip"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fbaa603f9b8,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 127.0.0.1 at 2012-12-02 13:38:01 -0600
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY name
+  Rendered store/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 81ms (Views: 78.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (2.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fbaa7459bb0,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fbaa73f0d40,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00], ["full_description", ""], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fbaa732ce18,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00], ["full_description", "office supply"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fbaa725a198,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:01 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 02 Dec 2012 19:38:02 UTC +00:00], ["email", "admin@adminsemail.com"], ["password_digest", "$2a$10$ZAnSFVE.jkA2Zdrzlk3S1.AtZKO02X0i1r2fmfunlDPqd7ZqC6yoC"], ["updated_at", Sun, 02 Dec 2012 19:38:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/login" for 127.0.0.1 at 2012-12-02 13:38:02 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2012-12-02 13:38:02 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"admin@adminsemail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 337ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2012-12-02 13:38:02 -0600
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY name
+  Rendered store/index.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.4ms)
+Started GET "/products" for 127.0.0.1 at 2012-12-02 13:38:02 -0600
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY name
+  Rendered products/index.html.erb within layouts/application (6.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (1.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:02 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fbaa759e048,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:02 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:02 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fbaa7470ce8,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:02 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:02 UTC +00:00], ["full_description", ""], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fbaa74053d0,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:02 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:02 UTC +00:00], ["full_description", "office supply"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fbaa7328598,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:02 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sun, 02 Dec 2012 19:38:02 UTC +00:00], ["email", "admin@adminsemail.com"], ["password_digest", "$2a$10$c.og5onFAJUfw6vq2p3yd.b4N4p8r9DsUv2uaEaI.RTpUZbEKashO"], ["updated_at", Sun, 02 Dec 2012 19:38:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/login" for 127.0.0.1 at 2012-12-02 13:38:02 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2012-12-02 13:38:02 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"admin@adminsemail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1
+Redirected to http://www.example.com/
+Completed 302 Found in 288ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2012-12-02 13:38:03 -0600
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY name[0m
+  Rendered store/index.html.erb within layouts/application (4.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.2ms)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' ORDER BY name LIMIT 1[0m
+Started GET "/products/3/edit" for 127.0.0.1 at 2012-12-02 13:38:03 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1[0m  [["id", "3"]]
+  Rendered products/_form.html.erb (6.3ms)
+  Rendered products/edit.html.erb within layouts/application (53.1ms)
+Completed 200 OK in 58ms (Views: 55.8ms | ActiveRecord: 0.2ms)
+Started PUT "/products/3" for 127.0.0.1 at 2012-12-02 13:38:03 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "product"=>{"name"=>"Paper", "brief_description"=>"", "full_description"=>"office supply", "meta_keywords"=>"", "sku"=>"", "price"=>"0.3"}, "commit"=>"Update Product", "id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mProduct Load (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mProduct Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "products" WHERE ("products"."sku" = '' AND "products"."id" != 3) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "products" SET "brief_description" = '', "full_description" = 'office supply', "meta_keywords" = '', "sku" = '', "updated_at" = '2012-12-02 19:38:03.303964' WHERE "products"."id" = 3
+[paperclip] Saving attachments.
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/products/3
+Completed 302 Found in 10ms (ActiveRecord: 0.4ms)
+Started GET "/products/3" for 127.0.0.1 at 2012-12-02 13:38:03 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1  [["id", "3"]]
+  Rendered products/show.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."name" = 'Paper' ORDER BY name LIMIT 1
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:03 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fbaa5124258,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:03 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:03 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fbaa5117120,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:03 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:03 UTC +00:00], ["full_description", ""], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fbaa51093e0,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:03 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:03 UTC +00:00], ["full_description", "office supply"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fbaa50fc668,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:03 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 02 Dec 2012 19:38:03 UTC +00:00], ["email", "admin@adminsemail.com"], ["password_digest", "$2a$10$UYDwTvatD5x2TtJMGujUJupUNaC6xNNQHduTSjTewvfjJs8LuV90a"], ["updated_at", Sun, 02 Dec 2012 19:38:03 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/login" for 127.0.0.1 at 2012-12-02 13:38:03 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2012-12-02 13:38:03 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"admin@adminsemail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 289ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2012-12-02 13:38:03 -0600
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY name
+  Rendered store/index.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.3ms)
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."name" = 'Orange' ORDER BY name LIMIT 1
+Started GET "/products/2/edit" for 127.0.0.1 at 2012-12-02 13:38:03 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1  [["id", "2"]]
+  Rendered products/_form.html.erb (5.0ms)
+  Rendered products/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.1ms)
+Started PUT "/products/2" for 127.0.0.1 at 2012-12-02 13:38:04 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "product"=>{"name"=>"Orange", "brief_description"=>"", "full_description"=>"\nfruit", "meta_keywords"=>"", "sku"=>"", "price"=>"1.15", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fbaa5119a10 @original_filename="orange.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"orange.png\"\r\nContent-Type: image/png\r\nContent-Length: 178659\r\n", @tempfile=#<File:/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/RackMultipart20121202-3210-wwzxso>>}, "commit"=>"Update Product", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1  [["id", "2"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+Command :: identify -format %wx%h '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3210-qf43k0.png[0]'
+Command :: identify -format %m '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3210-qf43k0.png[0]'
+Command :: identify -format %m '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3210-qf43k0.png[0]'
+Command :: convert '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3210-qf43k0.png[0]' -auto-orient -resize "300x300>" '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3210-qf43k020121202-3210-arcne5'
+Command :: file -b --mime '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3210-qf43k020121202-3210-arcne5'
+Command :: identify -format %wx%h '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3210-qf43k0.png[0]'
+Command :: identify -format %m '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3210-qf43k0.png[0]'
+Command :: identify -format %m '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3210-qf43k0.png[0]'
+Command :: convert '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3210-qf43k0.png[0]' -auto-orient -resize "100x100>" '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3210-qf43k020121202-3210-eqffh3'
+Command :: file -b --mime '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/orange20121202-3210-qf43k020121202-3210-eqffh3'
+  [1m[35mProduct Exists (0.2ms)[0m  SELECT 1 AS one FROM "products" WHERE ("products"."sku" = '' AND "products"."id" != 2) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "products" SET "brief_description" = '', "full_description" = '
+fruit', "meta_keywords" = '', "sku" = '', "image_file_name" = 'orange.png', "image_content_type" = 'image/png', "image_file_size" = 178659, "image_updated_at" = '2012-12-02 19:38:04.032177', "updated_at" = '2012-12-02 19:38:04.277973' WHERE "products"."id" = 2[0m
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/products/2
+Completed 302 Found in 282ms (ActiveRecord: 0.7ms)
+Started GET "/products/2" for 127.0.0.1 at 2012-12-02 13:38:04 -0600
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1[0m  [["id", "2"]]
+  Rendered products/show.html.erb within layouts/application (6.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:04 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Apple"], ["price", #<BigDecimal:7fbaa5117c60,'0.11E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:04 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:04 UTC +00:00], ["full_description", "fruit"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Orange"], ["price", #<BigDecimal:7fbaa510bd48,'0.115E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:04 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:04 UTC +00:00], ["full_description", ""], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Paper"], ["price", #<BigDecimal:7fbaa50ffa98,'0.3E0',9(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:04 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("brief_description", "created_at", "full_description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "meta_keywords", "name", "price", "sku", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["brief_description", nil], ["created_at", Sun, 02 Dec 2012 19:38:04 UTC +00:00], ["full_description", "office supply"], ["image_content_type", nil], ["image_file_name", nil], ["image_file_size", nil], ["image_updated_at", nil], ["meta_keywords", nil], ["name", "Scissor"], ["price", #<BigDecimal:7fbaa50f2e88,'0.515E1',18(18)>], ["sku", nil], ["updated_at", Sun, 02 Dec 2012 19:38:04 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 02 Dec 2012 19:38:04 UTC +00:00], ["email", "admin@adminsemail.com"], ["password_digest", "$2a$10$1/cJmRCZUM5hLjK/064m1.n06HFeyCHAjFQdA4hHnRuAA8xr4FXHW"], ["updated_at", Sun, 02 Dec 2012 19:38:04 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/login" for 127.0.0.1 at 2012-12-02 13:38:04 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2012-12-02 13:38:04 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"admin@adminsemail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 290ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2012-12-02 13:38:04 -0600
+Processing by StoreController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY name
+  Rendered store/index.html.erb within layouts/application (6.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."name" = 'Scissor' ORDER BY name LIMIT 1
+Started GET "/products/4/edit" for 127.0.0.1 at 2012-12-02 13:38:04 -0600
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1  [["id", "4"]]
+  Rendered products/_form.html.erb (5.4ms)
+  Rendered products/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.1ms)
+Started PUT "/products/4" for 127.0.0.1 at 2012-12-02 13:38:05 -0600
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "product"=>{"name"=>"Scissor", "brief_description"=>"", "full_description"=>"\noffice supply", "meta_keywords"=>"", "sku"=>"", "price"=>"5.15", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fbaa76c45a8 @original_filename="badfile.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"badfile.pdf\"\r\nContent-Type: application/pdf\r\nContent-Length: 0\r\n", @tempfile=#<File:/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/RackMultipart20121202-3210-1d82fwy>>}, "commit"=>"Update Product", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProduct Load (0.0ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? ORDER BY name LIMIT 1  [["id", "4"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+Command :: identify -format %wx%h '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/badfile20121202-3210-1nm5f5n.pdf[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: /var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/badfile20121202-3210-1nm5f5n.pdf is not recognized by the 'identify' command.>
+Command :: identify -format %wx%h '/var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/badfile20121202-3210-1nm5f5n.pdf[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: /var/folders/ss/f3ng63ws789c6fc55ydz5vc00000gn/T/badfile20121202-3210-1nm5f5n.pdf is not recognized by the 'identify' command.>
+  [1m[35mProduct Exists (0.2ms)[0m  SELECT 1 AS one FROM "products" WHERE ("products"."sku" = '' AND "products"."id" != 4) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered products/_form.html.erb (12.9ms)
+  Rendered products/edit.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 72ms (Views: 18.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sun, 02 Dec 2012 19:38:05 UTC +00:00], ["email", "admin@adminsemail.com"], ["password_digest", "$2a$10$dJCirk0GgpR2gcJrILUKN.kAoANkFG4YN/1kiaSKGm19ttUllLoBK"], ["updated_at", Sun, 02 Dec 2012 19:38:05 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/login" for 127.0.0.1 at 2012-12-02 13:38:05 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at 2012-12-02 13:38:05 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "email"=>"admin@adminsemail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'admin@adminsemail.com' LIMIT 1
+Redirected to http://www.example.com/
+Completed 302 Found in 294ms (ActiveRecord: 0.1ms)
+Started GET "/" for 127.0.0.1 at 2012-12-02 13:38:05 -0600
+Processing by StoreController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY name[0m
+  Rendered store/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+Started GET "/products" for 127.0.0.1 at 2012-12-02 13:38:05 -0600
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY name[0m
+  Rendered products/index.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
