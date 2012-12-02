@@ -11,3 +11,34 @@
  *= require_self
  *= require_tree .
  */
+#banner {
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 10px;
+    border-bottom: 2px solid;
+    color: tan;
+    text-align: center;
+}
+
+#columns {
+    backgorund: blue;
+}
+
+#main {
+  margin-left: 17em;
+  padding-top: 4ex;
+  padding-left: 2em;
+  background: white;
+}
+#side {
+  float: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  width: 16em;
+  background: tan;
+}
+#side a {
+color: pink; font-size: small;
+}
