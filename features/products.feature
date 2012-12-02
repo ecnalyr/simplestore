@@ -19,12 +19,14 @@ Scenario: User Views Product List
 	When user visits the Product List page
 	And user should see "Apple"
 	And user should see "Paper"
+	And user should see "$1.10"
 
 Scenario: User updates the description of a product
 	When user visits the edit page for "Paper"
 	And user fills in "Full description" with "office supply"
 	And user presses "Update Product"
 	Then the full description of "Paper" should be "office supply"
+	And user should see "$0.30"
 
 Scenario: User can upload an accepted filetype as an image
 	When user visits the edit page for "Orange"
