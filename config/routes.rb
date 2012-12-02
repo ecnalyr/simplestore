@@ -1,19 +1,21 @@
 Simplestore::Application.routes.draw do
- get "sessions/new"
+  get "store/index"
 
- get 'signup', to: 'users#new', as: 'signup'
- get 'signup', to: 'users#new', as: 'signup'
- get 'login', to: 'sessions#new', as: 'login'
- get 'logout', to: 'sessions#destroy', as: 'logout'
+  get "sessions/new"
 
- resources :users
- resources :sessions
+  get 'signup', to: 'users#new', as: 'signup'
+  get 'signup', to: 'users#new', as: 'signup'
+  get 'login', to: 'sessions#new', as: 'login'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
+
+  resources :users
+  resources :sessions
 
 
- resources :products
+  resources :products
 
 
- get "home/index"
+  get "home/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -64,7 +66,7 @@ Simplestore::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'home#index'
+  root :to => 'store#index'
 
   # See how all your routes lay out with "rake routes"
 

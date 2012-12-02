@@ -18,6 +18,8 @@
 #
 
 class Product < ActiveRecord::Base
+  default_scope :order => 'name'
+  
   attr_accessible 	:brief_description, :full_description, 
   					:meta_keywords, :name, :price, :sku, :image
   has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }
