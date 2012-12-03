@@ -24,14 +24,18 @@ describe ProductsController do
   # Product. As you add validations to Product, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    { "name" => "MyString" }
+    { "name" => "Apple", 
+      "price" => "4.50" }
   end
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
   # ProductsController. Be sure to keep this updated too.
   def valid_session
-    {}
+  end
+
+  before(:each) do
+    ApplicationController.any_instance.stub(:current_user).and_return(@user = mock('user'))
   end
 
   describe "GET index" do

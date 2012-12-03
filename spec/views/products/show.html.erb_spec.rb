@@ -7,7 +7,6 @@ describe "products/show" do
       :brief_description => "MyText",
       :full_description => "MyText",
       :meta_keywords => "Meta Keywords",
-      :image_link => "Image Link",
       :sku => "Sku",
       :price => "9.99"
     ))
@@ -20,7 +19,6 @@ describe "products/show" do
     rendered.should match(/MyText/)
     rendered.should match(/MyText/)
     rendered.should match(/Meta Keywords/)
-    rendered.should match(/Image Link/)
     rendered.should match(/Sku/)
     rendered.should match(/9.99/)
   end

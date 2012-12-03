@@ -7,7 +7,6 @@ describe "products/new" do
       :brief_description => "MyText",
       :full_description => "MyText",
       :meta_keywords => "MyString",
-      :image_link => "MyString",
       :sku => "MyString",
       :price => "9.99"
     ).as_new_record)
@@ -22,7 +21,6 @@ describe "products/new" do
       assert_select "textarea#product_brief_description", :name => "product[brief_description]"
       assert_select "textarea#product_full_description", :name => "product[full_description]"
       assert_select "input#product_meta_keywords", :name => "product[meta_keywords]"
-      assert_select "input#product_image_link", :name => "product[image_link]"
       assert_select "input#product_sku", :name => "product[sku]"
       assert_select "input#product_price", :name => "product[price]"
     end
