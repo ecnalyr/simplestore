@@ -5,7 +5,8 @@ Simplestore::Application.routes.draw do
   resources :carts
 
 
-  get "store/index"
+  # get "store/index"
+  root to: 'store#index', as: 'store'
 
   get "sessions/new"
 
