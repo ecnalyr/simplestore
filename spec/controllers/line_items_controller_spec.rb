@@ -164,10 +164,10 @@ describe LineItemsController do
       }.to change(LineItem, :count).by(-1)
     end
 
-    it "redirects to the line_items list" do
+    it "redirects to the line_items list and there are no line_items left in the list" do
       line_item = LineItem.create! valid_attributes
       delete :destroy, {:id => line_item.to_param}, valid_session
-      response.should redirect_to(line_items_url)
+      response.should redirect_to(store_url)
     end
   end
 
