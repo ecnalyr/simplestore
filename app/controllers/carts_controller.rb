@@ -65,7 +65,7 @@ class CartsController < ApplicationController
 
     respond_to do |format|
       if @cart.update_attributes(params[:cart])
-        format.html { redirect_to @cart, notice: 'Cart was successfully updated.' }
+        format.html { redirect_to @cart, notice: "Cart was successfully updated." }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -77,11 +77,13 @@ class CartsController < ApplicationController
   # DELETE /carts/1
   # DELETE /carts/1.json
   def destroy
-    @cart = Cart.find(params[:id])
+    @cart = current_cart
     @cart.destroy
+    session[:cart_id] = nil
 
     respond_to do |format|
-      format.html { redirect_to carts_url }
+      format.html { redirect_to store_url,
+      :notice => "You have emptied your cart" }
       format.json { head :no_content }
     end
   end

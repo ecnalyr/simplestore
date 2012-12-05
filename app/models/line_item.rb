@@ -7,10 +7,16 @@
 #  cart_id    :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  quantity   :integer          default(1)
 #
 
 class LineItem < ActiveRecord::Base
   attr_accessible :product, :product_id, :id, :updated_at, :cart_id, :created_at, :quantity
   belongs_to :product
   belongs_to :cart
+
+  def total_price
+    product.price * quantity
+  end
+  
 end
