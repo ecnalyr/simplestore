@@ -24,9 +24,24 @@ class Product < ActiveRecord::Base
   					:meta_keywords, :name, :price, :sku, :image
   has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }
 
+  has_many :line_items
+  before_destroy :ensure_not_referenced_by_any_line_item
+
   validates :name, :presence => true
   validates :sku, :uniqueness => true, :allow_nil => true, :allow_blank => true
   validates :price, :presence => true, :format => { :with => /^\d+??(?:\.\d{0,2})?$/ }
   validates_attachment_size :image, :less_than => 5.megabytes
   validates_attachment_content_type :image, :content_type => [ 'image/jpeg', 'image/png' ]
+
+  private
+
+    def ensure_not_referenced_by_any_line_item
+      if line_items.empty?
+        return true
+      else
+        errors.add(:base, 'Line Items present')
+        return false
+      end
+    end
+    
 end

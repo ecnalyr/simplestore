@@ -31,6 +31,7 @@
   padding-left: 2em;
   background: white;
 }
+
 #side {
   float: left;
   padding-top: 1em;
@@ -39,6 +40,11 @@
   width: 16em;
   background: tan;
 }
+
 #side a {
 color: pink; font-size: small;
+}
+
+#store .entry form, #store .entry form div {
+  display: inline;
 }

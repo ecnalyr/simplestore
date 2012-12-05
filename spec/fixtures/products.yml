@@ -1,0 +1,7 @@
+one:
+    name: FirstProduct
+    price: 1.23
+
+two:
+    name: SecondProduct
+    price: 4.56
