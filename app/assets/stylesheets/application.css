@@ -65,3 +65,14 @@ color: pink; font-size: small;
   font-weight: bold;
   border-top: 1px solid #595;
 }
+
+#cart, #cart table {
+  font-size: smaller;
+  color: red;
+}
+
+#cart table {
+  border-top:     1px dotted #595;
+  border-bottom:  1px dotted $595;
+  margin-bottom:  10px;
+}

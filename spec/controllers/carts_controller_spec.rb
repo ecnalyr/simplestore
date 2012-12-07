@@ -159,7 +159,6 @@ describe CartsController do
       cart = Cart.create! valid_attributes
       delete :destroy, {:id => cart.to_param}, valid_session
       response.should redirect_to(store_path)
-      flash[:notice].should eql("You have emptied your cart")
     end
   end
 

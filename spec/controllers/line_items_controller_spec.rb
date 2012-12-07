@@ -91,7 +91,7 @@ describe LineItemsController do
 
       it "redirects to the created line_item" do
         post :create, :product_id => products(:one).id
-        response.should redirect_to(Cart.last)
+        response.should redirect_to(store_url)
       end
     end
 
