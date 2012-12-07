@@ -14,3 +14,7 @@ the opportunity to learn rails after having a background in .Net.
 == Spec sheet
 
 The latest version of the spec sheet can be viewed here: https://workflowy.com/shared/e39c5761-4fc5-7f7a-8e66-d059c10ecff3
+
+== Pull Requests
+
+Pull requests are welcome -- please include test coverage and mention whether the changes are in the spec or not.
