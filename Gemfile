@@ -14,7 +14,8 @@ group :development, :test do
 	gem 'annotate', '>=2.5.0'
 	gem 'cucumber-rails', :require => false
 	gem 'database_cleaner'
-  	gem 'capybara'
+  gem 'capybara'
+  gem 'factory_girl_rails'
 end
 
 # Gems used only for assets and not required

@@ -38,9 +38,6 @@ describe LineItemsController do
       { "product_id" => "1" }
   end
 
-  fixtures :products
-
-
   before(:each) do
   end
 
@@ -79,18 +76,18 @@ describe LineItemsController do
     describe "with valid params" do
       it "creates a new LineItem" do
         expect {
-            post :create, :product_id => products(:one).id
+            post :create, :product_id => create(:product)
          }.to change(LineItem, :count).by(1)
       end
 
       it "assigns a newly created line_item as @line_item" do
-        post :create, :product_id => products(:one).id
+        post :create, :product_id => create(:product)
         assigns(:line_item).should be_a(LineItem)
         assigns(:line_item).should be_persisted
       end
 
       it "redirects to the created line_item" do
-        post :create, :product_id => products(:one).id
+        post :create, :product_id => create(:product)
         response.should redirect_to(store_url)
       end
     end
@@ -99,14 +96,14 @@ describe LineItemsController do
       it "assigns a newly created but unsaved line_item as @line_item" do
         # Trigger the behavior that occurs when invalid params are submitted
         LineItem.any_instance.stub(:save).and_return(false)
-        post :create, :product_id => products(:one).id
+        post :create, :product_id => create(:product)
         assigns(:line_item).should be_a_new(LineItem)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         LineItem.any_instance.stub(:save).and_return(false)
-        post :create, :product_id => products(:one).id
+        post :create, :product_id => create(:product)
         response.should render_template("new")
       end
     end
