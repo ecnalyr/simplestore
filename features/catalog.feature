@@ -19,3 +19,11 @@ Scenario: User Views the Catalog
     And user should see "office supply"
     And user should not see "full descrip"
     And user should see "$1.10"
+
+Scenario: User Checks out
+    When user visits the Catalog page
+    And user adds the first item to the cart
+    And user presses "Checkout"
+    And user fills and submits the form (places the order)
+    Then user should see "Order was successfully created."
+    And user should receive an "order_received" email.

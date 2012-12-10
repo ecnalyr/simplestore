@@ -62,7 +62,3 @@ db/test.sqlite3-journal
 public/system/products/*
 
 tmp/pids/server.pid
-
-public/system/products/images/000/000/001/medium/orange.png
-
-public/system/products/images/000/000/001/thumb/orange.png
