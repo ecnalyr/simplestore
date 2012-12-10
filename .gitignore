@@ -56,3 +56,7 @@ db/test.sqlite3
 db/schema.rb
 
 db/development.sqlite3
+
+db/test.sqlite3-journal
+
+public/system/products/
