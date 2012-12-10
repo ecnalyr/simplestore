@@ -2,20 +2,22 @@ require 'spec_helper'
 
 describe "orders/index" do
   before(:each) do
-    assign(:orders, [
+    orders = [
       stub_model(Order,
-        :name => "Name",
-        :address => "MyText",
-        :email => "Email",
-        :pay_type => "Pay Type"
-      ),
-      stub_model(Order,
-        :name => "Name",
-        :address => "MyText",
-        :email => "Email",
-        :pay_type => "Pay Type"
-      )
-    ])
+            :name => "Name",
+            :address => "MyText",
+            :email => "Email",
+            :pay_type => "Pay Type"
+          ),
+          stub_model(Order,
+            :name => "Name",
+            :address => "MyText",
+            :email => "Email",
+            :pay_type => "Pay Type"
+          )]
+    orders.stub!(:current_page).and_return(1)
+    orders.stub!(:total_pages).and_return(2)
+    assign(:orders, orders)
   end
 
   it "renders a list of orders" do
