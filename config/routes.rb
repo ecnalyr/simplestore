@@ -22,7 +22,9 @@ Simplestore::Application.routes.draw do
   resources :sessions
 
 
-  resources :products
+  resources :products do
+    get :who_bought, :on => :member
+  end
 
 
   get "home/index"
