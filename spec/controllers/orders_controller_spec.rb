@@ -84,19 +84,23 @@ describe OrdersController do
     describe "with valid params" do
       it "creates a new Order" do
         expect {
-          post :create, {:order => valid_attributes}, valid_session
+          # cart = create(:cart)
+          cart = Cart.create!
+          post :create, {:order => valid_attributes}, {:cart_id => cart.id}, valid_session
         }.to change(Order, :count).by(1)
       end
 
       it "assigns a newly created order as @order" do
-        post :create, {:order => valid_attributes}, valid_session
+        cart = Cart.create!
+        post :create, {:order => valid_attributes}, {:cart_id => cart.id}, valid_session
         assigns(:order).should be_a(Order)
         assigns(:order).should be_persisted
       end
 
       it "redirects to the created order" do
-        post :create, {:order => valid_attributes}, valid_session
-        response.should redirect_to(Order.last)
+        cart = Cart.create!
+        post :create, {:order => valid_attributes}, {:cart_id => cart.id}, valid_session
+        response.should redirect_to(store_path)
       end
     end
 
