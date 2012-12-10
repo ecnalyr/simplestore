@@ -8,10 +8,11 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #  quantity   :integer          default(1)
+#  order_id   :integer
 #
 
 class LineItem < ActiveRecord::Base
-  attr_accessible :product, :product_id, :id, :updated_at, :cart_id, :created_at, :quantity
+  attr_accessible :product, :product_id, :id, :updated_at, :cart_id, :created_at, :quantity, :cart
   belongs_to :product
   belongs_to :cart
 

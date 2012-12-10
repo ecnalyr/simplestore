@@ -36,3 +36,23 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# rspec Test Files #
+####################
+test/dummy/db/*.sqlite3
+test/dummy/log/*.log
+test/dummy/tmp/
+test/dummy/.sass-cache
+log/
+db/*.sqlite3
+db/schema.rb
+TAGS
+log/test.log
+
+log/development.log
+
+db/test.sqlite3
+
+db/schema.rb
+
+db/development.sqlite3
