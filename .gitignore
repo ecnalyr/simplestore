@@ -59,6 +59,6 @@ db/development.sqlite3
 
 db/test.sqlite3-journal
 
-public/system/products/
+public/system/products/*
 
 tmp/pids/server.pid
